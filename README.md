@@ -37,6 +37,7 @@ This section compares results of models trained on non-encrypted data but evalua
 
 ## Results: Encrypted Training on 1-layer-NN
 This section compares results of the model trained on encrypted data when evaluated on non-encrypted and encrypted test data.
+
 <img src="images/model_performance.png" alt="1-layer-NN encrypted training" width="480"/>
 
 # References
