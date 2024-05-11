@@ -4,13 +4,13 @@ In this project, we conduct several experiments to assess the feasibility of usi
 
 ## Code Outline and Instructions for Reproducing our Results
 
-The `data/` folder contains the original MSK-IMPACT data as msk_impact_2017_clinical_data.tsv and our preprocessed data as train_encoded.csv, test_encoded.csv, and combined_encoded.csv. 
+The `data/` folder contains the original MSK-IMPACT data as msk_impact_2017_clinical_data.tsv and our preprocessed data as train_encoded.csv, test_encoded.csv, and combined_encoded.csv. Change the paths in the .ipynb files to this directory while reading the dataset in your local working directory (indicated within the notebooks). Also skip Google Colab mounting steps if you are working locally (it is highly suggested to work on Colab for every notebook other than `XGB encrypted evaluation.ipynb`).
 
 `preprocessing and base models.ipynb` contains the notebook with exploratory data analysis, our preprocessing strategy, base model training and evaluation. Run this code to reproduce our results on non-encrypted data for non-encrypted models (section 3.2, Non-encrypted ML Models in the report, Fig. 2 and Fig 3).
 
-`XGB encrypted evaluation.ipynb` contains the notebook for the encrypted evaluation of an XGBoost model using ppxgboost [[2](https://github.com/awslabs/privacy-preserving-xgboost-inference)]. Run this code to reproduce our results on unencrypted and encrypted data (section 3.3, 3.3.1 XGBoost encrypted evaluation, Fig 4).
+`XGB encrypted evaluation.ipynb` contains the notebook for the encrypted evaluation of an XGBoost model using ppxgboost [[2](https://github.com/awslabs/privacy-preserving-xgboost-inference)]. Run this code to reproduce our results on unencrypted and encrypted data (section 3.3, 3.3.1 XGBoost encrypted evaluation, Fig 4). **Note:** Make sure you have the ppxgboost package (https://github.com/awslabs/privacy-preserving-xgboost-inference) installed on your environment.
 
-`LR encrypted evaluation.ipynb` contains the notebook for the encrypted evaluation of a 1-layer-NN using TenSEAL [[3](https://github.com/OpenMined/TenSEAL)]. `LR encrypted evaluation resampled.ipynb` contains results for the same model trained on resampled data to combat class imbalance. Run these two notebooks to reproduce our results on unencrypted and encrypted data (section 3.3, 3.3.2 1-layer-NN encrypted evaluation, Fig 5, 6).
+`LR encrypted evaluation.ipynb` contains the notebook for the encrypted evaluation of a 1-layer-NN using TenSEAL [[3](https://github.com/OpenMined/TenSEAL)]. `LR encrypted evaluation resampled.ipynb` contains results for the same model trained on resampled data to combat class imbalance. Run these two notebooks to reproduce our results on unencrypted and encrypted data (section 3.3, 3.3.2 1-layer-NN encrypted evaluation, Fig 5, 6). **Note:** Make sure you have the TenSEAL package (https://github.com/OpenMined/TenSEAL) installed on your environment.
 
 `LR encrypted training.ipynb` contains the notebook for the encrypted training of a 1-layer-NN using TenSEAL. Run this code to reproduce our results for section 3.4 Encrypted training, Fig 7. **Note that running this notebook requires a high RAM environment**.
 
