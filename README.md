@@ -4,7 +4,7 @@ In this project, we conduct several experiments to assess the feasibility of usi
 
 ## Code Outline and Instructions for Reproducing our Results
 
-The `data/` folder contains the original MSK-IMPACT data as `msk_impact_2017_clinical_data.tsv` and our preprocessed data as `train_encoded.csv`, `test_encoded.csv`, and `combined_encoded.csv`. 
+The `data/` folder contains the original MSK-IMPACT data as msk_impact_2017_clinical_data.tsv and our preprocessed data as train_encoded.csv, test_encoded.csv, and combined_encoded.csv. 
 
 `preprocessing and base models.ipynb` contains the notebook with exploratory data analysis, our preprocessing strategy, base model training and evaluation. Run this code to reproduce our results on non-encrypted data for non-encrypted models (section 3.2, Non-encrypted ML Models in the report, Fig. 2 and Fig 3).
 
